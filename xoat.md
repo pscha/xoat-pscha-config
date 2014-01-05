@@ -47,7 +47,7 @@ Mod4-` (grave)
 Mod4-[1-9]
 :	Raise nth window in a tile.
 
-Mod4-Escape
+Mod4-q
 :	Close a window.
 
 Mod4-f
