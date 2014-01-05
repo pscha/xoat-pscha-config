@@ -68,8 +68,8 @@ Shift-Mod4-Prior
 Mod4-x
 :	Launch dmenu_run
 
-F1
-:	Launch xterm
+Mod4+Return
+:	Launch xfce4-terminal
 
 # OPTIONS
 
