@@ -6,6 +6,10 @@ normal:
 	$(CC) -o xoat-debug xoat.c $(CFLAGS) -g $(LDADD) $(LDFLAGS)
 	strip xoat
 
+install:
+	cp -f xoat /usr/bin
+	xoat restart
+
 docs:
 	pandoc -s -w man xoat.md -o xoat.1
 

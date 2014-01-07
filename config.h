@@ -120,7 +120,7 @@ binding keys[] = {
 	{ .mod = Mod4Mask, .key = XK_l,  .act = action_command, .data = "dmenu_mocp" },
 	{ .mod = Mod4Mask, .key = XK_space,  .act = action_command, .data = "dmenu_stats" },
         { .mod = Mod4Mask, .key = XK_F1, .act = action_command, .data = "xfce4-terminal"   },
-	{ .mod = Mod4Mask, .key = XK_F2, .act = action_command, .data = "surf"  },
+	{ .mod = Mod4Mask, .key = XK_F2, .act = action_command, .data = "surf google.de"  },
 	{ .mod = Mod4Mask, .key = XK_Return, .act = action_command, .data = "xfce4-terminal"   },
 	//{ .mod = Mod4Mask, .key = XK_Enter,  .act = action_command, .data = "urxvtcd" },
 
