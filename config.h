@@ -1,15 +1,15 @@
 // xoat config.
 
 #define BORDER 1
-#define BORDER_BLUR "Black" //Dark Grey
-#define BORDER_FOCUS "Royal Blue"
-#define BORDER_URGENT "Red"
-#define GAP 0
+#define BORDER_BLUR "#222222" //Dark Grey
+#define BORDER_FOCUS "#dedede"
+#define BORDER_URGENT "#aa77aa"
+#define GAP  20
 
 // Title bar xft font.
 // Setting this to NULL will disable title bars
 #define TITLE NULL
-//#define TITLE "sans:size=8"
+//#define TITLE "terminus:size=10"
 
 // Title bar style
 #define TITLE_BLUR "Black"
@@ -46,8 +46,8 @@
 
 layout layouts[] = {
 	// Look at xrandr output to determine your monitor order.
-	{ .spot_start = CURRENT, .spot1_align = LEFT,  .spot1_width_pct = 59, .spot2_height_pct = 83 }, // primary monitor
-	{ .spot_start = SMART, .spot1_align = RIGHT, .spot1_width_pct = 60, .spot2_height_pct = 66 }, // secondary monitor, etc...
+	{ .spot_start = CURRENT, .spot1_align = LEFT,  .spot1_width_pct = 62, .spot2_height_pct = 60 }, // primary monitor
+	//{ .spot_start = SMART, .spot1_align = RIGHT, .spot1_width_pct = 60, .spot2_height_pct = 66 }, // secondary monitor, etc...
 };
 
 // Available actions...
@@ -119,13 +119,13 @@ binding keys[] = {
 	{ .mod = Mod4Mask, .key = XK_r,  .act = action_command, .data = "dmenu_run" },
 	{ .mod = Mod4Mask, .key = XK_l,  .act = action_command, .data = "dmenu_mocp" },
 	{ .mod = Mod4Mask, .key = XK_space,  .act = action_command, .data = "dmenu_stats" },
-        { .mod = Mod4Mask, .key = XK_F1, .act = action_command, .data = "xfce4-terminal"   },
+        { .mod = Mod4Mask, .key = XK_F1, .act = action_command, .data = "urxvtcd"   },
 	{ .mod = Mod4Mask, .key = XK_F2, .act = action_command, .data = "surf google.de"  },
         { .mod = Mod4Mask, .key = XK_F3, .act = action_command, .data = "surf github.com"  },
         { .mod = Mod4Mask, .key = XK_F4, .act = action_command, .data = "surf gmail.com"  },
 
 
-	{ .mod = Mod4Mask, .key = XK_Return, .act = action_command, .data = "xfce4-terminal"   },
+	{ .mod = Mod4Mask, .key = XK_Return, .act = action_command, .data = "urxvtcd"   },
 	//{ .mod = Mod4Mask, .key = XK_Enter,  .act = action_command, .data = "urxvtcd" },
 
         // Find or start apps by WM_CLASS (lower case match).
