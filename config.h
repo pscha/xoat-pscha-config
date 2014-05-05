@@ -1,20 +1,20 @@
 // xoat config.
 
-#define BORDER 1
-#define BORDER_BLUR "#222222" //Dark Grey
-#define BORDER_FOCUS "#dedede"
+#define BORDER 0
+#define BORDER_BLUR "#e0e0e0" //Dark Grey
+#define BORDER_FOCUS "#55cc55"
 #define BORDER_URGENT "#aa77aa"
-#define GAP  20
+#define GAP  0
 
 // Title bar xft font.
 // Setting this to NULL will disable title bars
-#define TITLE NULL
-//#define TITLE "terminus:size=10"
+//#define TITLE NULL
+#define TITLE "xft:droid sans mono:pixelsize=12"
 
 // Title bar style
 #define TITLE_BLUR "Black"
-#define TITLE_FOCUS "White"
-#define TITLE_ELLIPSIS 32
+#define TITLE_FOCUS "Black"
+#define TITLE_ELLIPSIS 16
 
 // There are three static tiles called SPOT1, SPOT2, and SPOT3.
 // Want more tiles? Different layouts? Floating? Go away ;)
