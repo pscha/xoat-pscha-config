@@ -8,6 +8,7 @@ normal:
 	strip xoat
 
 install:
+	make
 	cp -f xoat /usr/bin
 	xoat restart
 
