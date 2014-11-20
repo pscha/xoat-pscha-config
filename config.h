@@ -46,7 +46,7 @@
 
 layout layouts[] = {
 	// Look at xrandr output to determine your monitor order.
-	{ .spot_start = CURRENT, .spot1_align = LEFT,  .spot1_width_pct = 60, .spot2_height_pct = 66 }, // primary monitor66//{ .spot_start = SMART, .spot1_align = RIGHT, .spot1_width_pct = 60, .spot2_height_pct = 66 }, // secondary monitor, etc...
+	{ .spot_start = CURRENT, .spot1_align = LEFT,  .spot1_width_pct = 60, .spot2_height_pct = 60 }, // primary monitor66//{ .spot_start = SMART, .spot1_align = RIGHT, .spot1_width_pct = 60, .spot2_height_pct = 66 }, // secondary monitor, etc...
 };
 
 // Available actions...
@@ -118,15 +118,15 @@ binding keys[] = {
 	{ .mod = Mod4Mask, .key = XK_r,  .act = action_command, .data = "dmenu_run" },
 	{ .mod = Mod4Mask, .key = XK_l,  .act = action_command, .data = "dmenu_mocp" },
 	{ .mod = Mod4Mask, .key = XK_space,  .act = action_command, .data = "dmenu_stats" },
-        { .mod = Mod4Mask, .key = XK_F1, .act = action_command, .data = "urxvtcd -e hnb"   },
-	{ .mod = Mod4Mask, .key = XK_F2, .act = action_command, .data = "urxvtcd -e elinks google.de"  },
-        { .mod = Mod4Mask, .key = XK_F3, .act = action_command, .data = "surf"  },
-        { .mod = Mod4Mask, .key = XK_F4, .act = action_command, .data = "urxvtcd -e mutt"  },
-        { .mod = Mod4Mask, .key = XK_F5, .act = action_command, .data = "urxvtcd -e ranger"  },
+        { .mod = Mod4Mask, .key = XK_F1, .act = action_command, .data = "evilvte -e hnb"   },
+	{ .mod = Mod4Mask, .key = XK_F2, .act = action_command, .data = "evilvte -e elinks google.de"  },
+        { .mod = Mod4Mask, .key = XK_F3, .act = action_command, .data = "dwb"  },
+        { .mod = Mod4Mask, .key = XK_F4, .act = action_command, .data = "evilvte -e mutt"  },
+        { .mod = Mod4Mask, .key = XK_F5, .act = action_command, .data = "evilvte -e ranger"  },
 
 
-	{ .mod = Mod4Mask, .key = XK_Return, .act = action_command, .data = "urxvtcd"   },
-	//{ .mod = Mod4Mask, .key = XK_Enter,  .act = action_command, .data = "urxvtcd" },
+	{ .mod = Mod4Mask, .key = XK_Return, .act = action_command, .data = "evilvte"   },
+	//{ .mod = Mod4Mask, .key = XK_Enter,  .act = action_command, .data = "evilvte" },
 
         // Find or start apps by WM_CLASS (lower case match).
 	// Only works for apps that use some form of their binary name as their class...
