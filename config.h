@@ -2,8 +2,8 @@
 
 #define BORDER 1
 #define BORDER_BLUR "#000000" //Dark Grey
-#define BORDER_FOCUS "#55cc55"
-#define BORDER_URGENT "#aa77aa"
+#define BORDER_FOCUS "#111111"
+#define BORDER_URGENT "#444444"
 #define GAP  0
 
 // Title bar xft font.
