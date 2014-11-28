@@ -9,7 +9,7 @@ normal:
 
 install:
 	make
-	cp -f xoat /usr/bin
+	sudo cp -f xoat /usr/local/bin
 	xoat restart
 
 docs:

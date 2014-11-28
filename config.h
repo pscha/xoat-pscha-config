@@ -4,7 +4,7 @@
 #define BORDER_BLUR "#000000" //Dark Grey
 #define BORDER_FOCUS "#555555"
 #define BORDER_URGENT "#444444"
-#define GAP  0
+#define GAP  10
 
 // Title bar xft font.
 // Setting this to NULL will disable title bars
@@ -114,7 +114,7 @@ binding keys[] = {
 	{ .mod = ShiftMask|Mod4Mask, .key = XK_Prior, .act = action_move_monitor, .num = +1 },
 
 	// Launcher
-	{ .mod = Mod4Mask, .key = XK_x,  .act = action_command, .data = "dmenu_run" },
+/*	{ .mod = Mod4Mask, .key = XK_x,  .act = action_command, .data = "dmenu_run" },
 	{ .mod = Mod4Mask, .key = XK_r,  .act = action_command, .data = "dmenu_run" },
 	{ .mod = Mod4Mask, .key = XK_l,  .act = action_command, .data = "dmenu_mocp" },
 	{ .mod = Mod4Mask, .key = XK_space,  .act = action_command, .data = "dmenu_stats" },
@@ -126,7 +126,7 @@ binding keys[] = {
 
 
 	{ .mod = Mod4Mask, .key = XK_Return, .act = action_command, .data = "evilvte"   },
-	//{ .mod = Mod4Mask, .key = XK_Enter,  .act = action_command, .data = "evilvte" },
+*/	//{ .mod = Mod4Mask, .key = XK_Enter,  .act = action_command, .data = "evilvte" },
 
         // Find or start apps by WM_CLASS (lower case match).
 	// Only works for apps that use some form of their binary name as their class...

@@ -118,10 +118,11 @@ void setup()
 			int width_spot2  = (double)w / 100 * MIN(90, MAX(10, spot2_height_pct));
 			for_spots(j)
 			{
-				m->spots[j].x = x;
-				m->spots[j].y = spot1_align == LEFT ? y: y + h - height_spot1;
-				m->spots[j].w = w;
-				m->spots[j].h = height_spot1;
+				m->spots[j].x = x + GAP;
+				m->spots[j].y = spot1_align == LEFT ? y: y + h -
+				height_spot1 + GAP;
+				m->spots[j].w = w - GAP;
+				m->spots[j].h = height_spot1-GAP;
 				if (j == SPOT1) continue;
 
 				m->spots[j].y = spot1_align == LEFT ? y + height_spot1 + GAP: y;
@@ -129,8 +130,8 @@ void setup()
 				m->spots[j].w = w - width_spot2 - GAP;
 				if (j == SPOT3) continue;
 
-				m->spots[j].x = x + w - width_spot2;
-				m->spots[j].w = width_spot2;
+				m->spots[j].x = x + w - width_spot2 - GAP;
+				m->spots[j].w = width_spot2 - GAP;
 			}
 			continue;
 		}
@@ -139,19 +140,19 @@ void setup()
 		int height_spot2 = (double)h / 100 * MIN(90, MAX(10, spot2_height_pct));
 		for_spots(j)
 		{
-			m->spots[j].x = spot1_align == LEFT ? x: x + w - width_spot1;
-			m->spots[j].y = y;
-			m->spots[j].w = width_spot1;
-			m->spots[j].h = h;
+			m->spots[j].x = spot1_align == LEFT ? x + GAP: x + w - width_spot1 + GAP;
+			m->spots[j].y = y + GAP;
+			m->spots[j].w = width_spot1 - GAP*2;
+			m->spots[j].h = h -GAP*2;
 			if (j == SPOT1) continue;
 
-			m->spots[j].x = spot1_align == LEFT ? x + width_spot1 + GAP: x;
+			m->spots[j].x = spot1_align == LEFT ? x + width_spot1 : x;
 			m->spots[j].w = w - width_spot1 - GAP;
-			m->spots[j].h = height_spot2;
+			m->spots[j].h = height_spot2 - GAP ;
 			if (j == SPOT2) continue;
 
 			m->spots[j].y = y + height_spot2 + GAP;
-			m->spots[j].h = h - height_spot2 - GAP;
+			m->spots[j].h = h - height_spot2 - GAP*2;
 		}
 	}
 
